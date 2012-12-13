@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "VCDecorations.h"
+#import <QuartzCore/QuartzCore.h>
+#import <MessageUI/MessageUI.h>
 
-@interface VCImageEditing : UIViewController
+@interface VCImageEditing : UIViewController <MFMailComposeViewControllerDelegate>
 
 @property bool selectingImage;
 @property (nonatomic, weak) IBOutlet UIImageView *ivEditingImage;
